@@ -27,17 +27,17 @@
 						"style": "kebab-case"
 					}
 				],
-        "@typescript-eslint/naming-convention": [
-          1,
-          {
-            "selector": "interface",
-            "format": ["PascalCase"],
-            "custom": {
-              "regex": "^I[A-Z]",
-              "match": true
-            }
-          }
-        ]
+				"@typescript-eslint/naming-convention": [
+					1,
+					{
+						"selector": "interface",
+						"format": ["PascalCase"],
+						"custom": {
+							"regex": "^I[A-Z]",
+							"match": true
+						}
+					}
+				]
 			}
 		},
 		{
