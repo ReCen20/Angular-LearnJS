@@ -1,10 +1,17 @@
 <app-header
   (click)="onClick($event)"
   [applicationConfig]="applicationConfig"
-  (menuClick)="log($event)">
+  (menuClick)="toggleSidenavOpened()">
 </app-header>
 <h1>Application works</h1>
 
-<input (keydown.enter)="log($event)">
+<!--<app-sidenav-->
+<!--  [isOpened]="isSidenavOpened"-->
+<!--  (isOpenedChange)="isSidenavOpened = $event">-->
+<!--</app-sidenav>-->
+<app-sidenav
+  [(isOpened)]="isSidenavOpened">
+</app-sidenav>
+<!--<input (keydown.enter)="log($event)">-->
 
 
